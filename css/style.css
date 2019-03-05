@@ -298,54 +298,209 @@ nav ul li:hover {
 	width:100%;
 }
 
-.OurTeam {
-	//background-image: url("../img/cad.jpg");
+.ContactUs {
+	background-image: url("../img/contact.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: gold;
+	font-size: 1.5vw;
+	height: 60vh;
+	min-height: 25rem;
+}
+
+.ContactUs h4 {
+	margin:0;
+}
+
+.inputName,
+.inputEmail,
+.inputPhone,
+.inputMsg {
+	left:10vw;
+	position:absolute;
+}
+
+.inputName {
+	top:3vh;
+}
+
+.inputEmail {
+	top:11vh;
+}
+
+.inputPhone {
+	top:18vh;
+}
+
+.inputMsg {
+	top:26vh;
+}
+
+.inputMsg input {
+	height:8rem;
+	width:20rem;
+}
+
+footer {
+	background-color: #222;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: gold;
+	color: #fff;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 2rem;
+	height: 10rem;
+	padding: 0 2rem;
+}
+
+.team1 {
+	background-image: url("../img/cad.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	height: 60vh;
+	min-height: 30rem;
+	display:flex;
+	place-items:center;
+}
+
+.team1 h2 {
+	border:3px solid transparent;
+	border-radius: 5px;
+	font-size: 3vw;
+	color:#fff;
+	margin:0 40%;
+	position: absolute;
+	text-align: center;
+	background-color: rgba(27,27,12,0.6);
+	padding:1rem
+}
+
+.designP {
+	color:#fff;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: gold;
+	height: 20vh;
+	min-height: 10rem;
+	background-color: #222;
+}
+
+.designP p {
+	padding:2rem 10rem;
+	text-align: center;
+}
+
+.team2 {
+	background-image: url("../img/plan.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
 	border-top-width: 2px;
 	border-top-style: solid;
 	border-top-color: gold;
 	height: 60vh;
-	animation-name: bg-covers;
-	animation-duration: 18s;
-	animation-iteration-count: infinite;
-	background-position: center;
-	background-repeat: no-repeat;
+	min-height: 30rem;
+	display:flex;
+	place-items:center;
+}
+
+.team2 h2 {
+	border:3px solid transparent;
+	border-radius: 5px;
+	font-size: 3vw;
+	color:#fff;
+	margin:0 40%;
+	position: absolute;
+	text-align: center;
+	background-color: rgba(27,27,12,0.6);
+	padding:1rem
+}
+
+.planP {
+	color:#fff;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: gold;
+	height: 20vh;
+	min-height: 10rem;
+	background-color: #222;
+}
+
+.planP p {
+	padding:0 10rem;
+	text-align: left;
+}
+
+.team3 {
+	background-image: url("../img/const.jpg");
 	background-attachment: fixed;
+	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: top;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: gold;
+	height: 60vh;
+	min-height: 30rem;
+	display:flex;
+	place-items:center;
 }
 
-.OurTeam h2 {
-	top:10%;
-	margin: 2rem 10rem;
+.team3 h2 {
+	border:3px solid transparent;
+	border-radius: 5px;
+	font-size: 3vw;
+	color:#fff;
+	margin:0 40%;
+	position: absolute;
+	text-align: center;
+	background-color: rgba(27,27,12,0.6);
+	padding:1rem
 }
 
-.OurTeam p {
-	top: 30%;
-	margin: 0 10rem;
+.buildP {
+	color:#222;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: gold;
+	height: 20vh;
+	min-height: 10rem;
+	background-color: #fff;
 }
 
-.designers,
-.planners,
-.builders {
-	position:absolute;
+.buildP p {
+	padding:2rem 10rem;
+	text-align: center;
 }
 
-.designers {
+@media only screen and (max-width: 640px) {
+	nav ul {
+		display:none;
+	}
+	.nav2 {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-row-gap: 5px;
+		justify-content: right;
+		position:fixed;
+		padding:1rem;
+		width: 10vw;
+	}
+	.nav2:hover {
+		cursor: pointer;
+	}
+	.nav2 .menu-bar {
+		background-color: gold;
+		border:1px solid gold;
+		width: 2rem;
+		height: 1px;
+	}
 }
-
-.planners {
-	display:none;
-}
-
-.builders {
-	display:none;
-}
-
-@keyframes bg-covers {
-	0% {
-		background-image: url("../img/cad.jpg");
-		}
-	33.3% {background-image: url("../img/plan.jpg");}
-	66.6% {background-image: url("../img/const.jpg");}
-	99.9% {background-image: url("../img/cad.jpg");}
-}
-
