@@ -1,0 +1,349 @@
+body, html{
+	box-sizing: border-box;
+	color: #222;
+	font-family: 'Overlock', cursive;
+	height: 100%;
+	padding:0;
+	margin:0;
+	scroll-behavior: smooth;
+	//overflow-x: hidden;
+}
+
+a:link, a:hover, a:visited {
+	color: #ddd;
+	text-decoration: none;
+}
+
+header {
+	margin:0;
+	left:0;
+	position:absolute;
+}
+
+nav {
+	background-color: rgba(23,23,45,0.7);
+	box-shadow: 0 10px 10px black;
+	font-family: 'Fredoka One', cursive;
+	position:fixed;
+	left:0;
+	width:100vw;
+	height: 4rem;
+	top:0;
+	z-index: 1;
+}
+
+.logo {
+	top:0;
+	bottom: 0;
+	width:20vw;
+	position:absolute;
+}
+
+nav ul {
+	display:flex;
+	justify-content: left;
+	list-style: none;
+	top:0;
+	bottom: 0;
+	margin:0;
+	left:20vw;
+	right:0;
+	position:absolute;
+}
+
+nav ul li {
+	border:3px solid transparent;
+	font-size: 1.3vw;
+	height: 100%;
+	cursor: pointer;
+	display:flex;
+	margin:0 1vw;
+	place-items:center;
+	padding:0 1rem;
+	transition-duration: 300ms;
+}
+
+nav ul li:hover {
+	color:gold;
+	background-color: black;
+	border-top-color: gold;
+	transition-duration: 1s;
+}
+
+.container {
+	position: relative;
+}
+
+.home {
+	background-image: url("../img/home.jpg");
+	background-attachment: fixed;
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
+.company-name {
+	background-color: rgba(232,232,232,0.6);
+	border-radius: 15px;
+	padding-right: 20rem;
+	padding-left: 1rem;
+	position:absolute;
+	bottom:11rem;
+	left: 10vw;
+}
+
+.tag-line {
+	position:absolute;
+	bottom:10rem;
+	left: 14vw;
+}
+
+.services {
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: gold;
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 2rem;
+	padding: 0 4rem;
+	height: 50vh;
+	min-height: 25rem;
+	background-color: #222;
+}
+
+.serv1,
+.serv2,
+.serv3 {
+	margin: 3rem 0;
+	position: relative;
+	cursor: pointer;
+}
+
+.services a {
+	background-color: #3498a8;
+	padding:1rem;
+	box-shadow: 0 5px 10px black;
+	bottom:2rem;
+}
+
+.services a:hover {
+	background-color: #1a6a77;
+}
+
+.service1,
+.service2,
+.service3 {
+	text-align: center;
+	font-size: 1.5vw;
+	background-color: #75ecff;
+	border:10px solid #3498a8;
+	top:0;
+	bottom: 0;
+	padding:1rem;
+	position: absolute;
+	transform-style: preserve-3d;
+	transition-duration: 1s;
+}
+
+.serv1:hover .service1 {
+	transform: rotateY(180deg);
+}
+
+.serv2:hover .service2 {
+	transform: rotateY(180deg);
+}
+
+.serv3:hover .service3 {
+	transform: rotateY(180deg);
+}
+
+.front,
+.back {
+	backface-visibility: hidden;
+}
+
+.front{
+	color: #444;
+	transform: translateZ(50px);
+}
+
+.back {
+	transform:rotateY(180deg);
+	background-color: #75ecff;
+}
+
+.icon1 {
+	position: absolute;
+	background-image: url("../img/designicon.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 20vh;
+	width: 100%;
+}
+
+.icon2 {
+	position: absolute;
+	background-image: url("../img/planicon.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 20vh;
+	width: 100%;
+}
+
+.icon3 {
+	position: absolute;
+	background-image: url("../img/buildicon.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 20vh;
+	width: 100%;
+}
+
+.AboutUs {
+	background-image: url("../img/vision.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: gold;
+	height: 40vh;
+	min-height: 40rem;
+}
+
+.mission {
+	font-size: 1.5vw;
+	position:absolute;
+	bottom:20rem;
+	left:5rem;
+	width:50vw;
+}
+
+.vision {
+	font-size: 1.5vw;
+	position:absolute;
+	bottom:10rem;
+	right:5rem;
+	width:50vw;
+}
+
+.Testimonials {
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: gold;
+	color:#fff;
+	padding: 0 4rem;
+	height: 40vh;
+	min-height: 18rem;
+	background-color: #222;
+	overflow-x: hidden;
+}
+
+.cprev,
+.cnext {
+	display: flex;
+	place-items: center;
+	position:absolute;
+	top:0;
+	bottom: 0;
+	font-size: 5vw;
+	cursor: pointer;
+}
+
+.cnext {
+	right:0;
+}
+
+.cprev {
+	left:0;
+}
+
+.cprev:hover, .cnext:hover {
+	background-color: rgba(200,200,200,0.6);
+}
+
+.item1,
+.item2,
+.item3 {
+	position: absolute;
+	font-size: 2vw;
+	top:0;
+	bottom: 0;
+	left:0;
+	right:0;
+	padding:8%;
+	transition: opacity 1s ease-in;
+}
+
+.item1h,
+.item2h,
+.item3h {
+	opacity: 0;
+}
+
+.carousel h3{
+	text-align: center;
+	position: relative;
+	width:100%;
+}
+
+.carousel p{
+	position: relative;
+	text-align: center;
+	width:100%;
+}
+
+.OurTeam {
+	//background-image: url("../img/cad.jpg");
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: gold;
+	height: 60vh;
+	animation-name: bg-covers;
+	animation-duration: 18s;
+	animation-iteration-count: infinite;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.OurTeam h2 {
+	top:10%;
+	margin: 2rem 10rem;
+}
+
+.OurTeam p {
+	top: 30%;
+	margin: 0 10rem;
+}
+
+.designers,
+.planners,
+.builders {
+	position:absolute;
+}
+
+.designers {
+}
+
+.planners {
+	display:none;
+}
+
+.builders {
+	display:none;
+}
+
+@keyframes bg-covers {
+	0% {background-image: url("../img/cad.jpg");}
+	33.3% {background-image: url("../img/plan.jpg");}
+	66.6% {background-image: url("../img/const.jpg");}
+	100% {background-image: url("../img/cad.jpg");}
+}
+
