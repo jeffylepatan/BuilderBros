@@ -341,9 +341,11 @@ nav ul li:hover {
 }
 
 @keyframes bg-covers {
-	0% {background-image: url("../img/cad.jpg");}
+	0% {
+		background-image: url("../img/cad.jpg");
+		}
 	33.3% {background-image: url("../img/plan.jpg");}
 	66.6% {background-image: url("../img/const.jpg");}
-	100% {background-image: url("../img/cad.jpg");}
+	99.9% {background-image: url("../img/cad.jpg");}
 }
 
