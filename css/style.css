@@ -6,7 +6,6 @@ body, html{
 	padding:0;
 	margin:0;
 	scroll-behavior: smooth;
-	//overflow-x: hidden;
 }
 
 a:link, a:hover, a:visited {
@@ -15,8 +14,8 @@ a:link, a:hover, a:visited {
 }
 
 header {
-	margin:0;
 	left:0;
+	margin:0;
 	position:absolute;
 }
 
@@ -24,49 +23,49 @@ nav {
 	background-color: rgba(23,23,45,0.7);
 	box-shadow: 0 10px 10px black;
 	font-family: 'Fredoka One', cursive;
-	position:fixed;
-	left:0;
-	width:100vw;
 	height: 4rem;
+	left:0;
+	position:fixed;
 	top:0;
+	width:100vw;
 	z-index: 1;
 }
 
 .logo {
-	top:0;
 	bottom: 0;
-	width:20vw;
 	position:absolute;
+	top:0;
+	width:20vw;
 }
 
 nav ul {
+	bottom: 0;
 	display:flex;
 	justify-content: left;
-	list-style: none;
-	top:0;
-	bottom: 0;
-	margin:0;
 	left:20vw;
-	right:0;
+	list-style: none;
+	margin:0;
 	position:absolute;
+	right:0;
+	top:0;
 }
 
 nav ul li {
 	border:3px solid transparent;
-	font-size: 1.3vw;
-	height: 100%;
 	cursor: pointer;
 	display:flex;
+	font-size: medium;
+	height: 100%;
 	margin:0 1vw;
-	place-items:center;
 	padding:0 1rem;
+	place-items:center;
 	transition-duration: 300ms;
 }
 
 nav ul li:hover {
-	color:gold;
 	background-color: black;
 	border-top-color: gold;
+	color:gold;
 	transition-duration: 1s;
 }
 
@@ -86,45 +85,45 @@ nav ul li:hover {
 .company-name {
 	background-color: rgba(232,232,232,0.6);
 	border-radius: 15px;
+	bottom:11rem;
+	left: 10vw;
 	padding-right: 20rem;
 	padding-left: 1rem;
 	position:absolute;
-	bottom:11rem;
-	left: 10vw;
 }
 
 .tag-line {
-	position:absolute;
 	bottom:10rem;
 	left: 14vw;
+	position:absolute;
 }
 
 .services {
+	background-color: #222;
 	border-top-width: 2px;
 	border-top-style: solid;
 	border-top-color: gold;
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-column-gap: 2rem;
-	padding: 0 4rem;
 	height: 50vh;
 	min-height: 25rem;
-	background-color: #222;
+	padding: 0 4rem;
 }
 
 .serv1,
 .serv2,
 .serv3 {
+	cursor: pointer;
 	margin: 3rem 0;
 	position: relative;
-	cursor: pointer;
 }
 
 .services a {
 	background-color: #3498a8;
-	padding:1rem;
 	box-shadow: 0 5px 10px black;
 	bottom:2rem;
+	padding:1rem;
 }
 
 .services a:hover {
@@ -134,16 +133,16 @@ nav ul li:hover {
 .service1,
 .service2,
 .service3 {
-	text-align: center;
-	font-size: 1.5vw;
 	background-color: #75ecff;
 	border:10px solid #3498a8;
-	top:0;
 	bottom: 0;
+	font-size: 1.5vw;
 	padding:1rem;
 	position: absolute;
 	transform-style: preserve-3d;
 	transition-duration: 1s;
+	text-align: center;
+	top:0;
 }
 
 .serv1:hover .service1 {
@@ -169,37 +168,37 @@ nav ul li:hover {
 }
 
 .back {
-	transform:rotateY(180deg);
 	background-color: #75ecff;
+	transform:rotateY(180deg);
 }
 
 .icon1 {
-	position: absolute;
 	background-image: url("../img/designicon.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 20vh;
+	position: absolute;
 	width: 100%;
 }
 
 .icon2 {
-	position: absolute;
 	background-image: url("../img/planicon.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 20vh;
+	position: absolute;
 	width: 100%;
 }
 
 .icon3 {
-	position: absolute;
 	background-image: url("../img/buildicon.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 20vh;
+	position: absolute;
 	width: 100%;
 }
 
@@ -217,42 +216,42 @@ nav ul li:hover {
 }
 
 .mission {
-	font-size: 1.5vw;
-	position:absolute;
 	bottom:20rem;
+	font-size: 1.5vw;
 	left:5rem;
+	position:absolute;
 	width:50vw;
 }
 
 .vision {
+	bottom:10rem;
 	font-size: 1.5vw;
 	position:absolute;
-	bottom:10rem;
 	right:5rem;
 	width:50vw;
 }
 
 .Testimonials {
+	background-color: #222;
 	border-top-width: 2px;
 	border-top-style: solid;
 	border-top-color: gold;
 	color:#fff;
-	padding: 0 4rem;
 	height: 40vh;
 	min-height: 18rem;
-	background-color: #222;
 	overflow-x: hidden;
+	padding: 0 4rem;
 }
 
 .cprev,
 .cnext {
+	bottom: 0;
+	cursor: pointer;
 	display: flex;
+	font-size: 5vw;
 	place-items: center;
 	position:absolute;
 	top:0;
-	bottom: 0;
-	font-size: 5vw;
-	cursor: pointer;
 }
 
 .cnext {
@@ -270,14 +269,14 @@ nav ul li:hover {
 .item1,
 .item2,
 .item3 {
-	position: absolute;
-	font-size: 2vw;
-	top:0;
 	bottom: 0;
+	font-size: 2vw;
 	left:0;
-	right:0;
 	padding:8%;
+	position: absolute;
+	right:0;
 	transition: opacity 1s ease-in;
+	top:0;
 }
 
 .item1h,
@@ -287,8 +286,8 @@ nav ul li:hover {
 }
 
 .carousel h3{
-	text-align: center;
 	position: relative;
+	text-align: center;
 	width:100%;
 }
 
@@ -345,6 +344,17 @@ nav ul li:hover {
 	width:20rem;
 }
 
+button {
+	background-color: #008CBA;border: none;
+	color: white;
+	display: inline-block;
+	font-size: 16px;
+	margin-top: 5px;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+}
+
 footer {
 	background-color: #222;
 	border-top-width: 2px;
@@ -364,32 +374,32 @@ footer {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
+	display:flex;
 	height: 60vh;
 	min-height: 30rem;
-	display:flex;
 	place-items:center;
 }
 
 .team1 h2 {
+	background-color: rgba(27,27,12,0.6);
 	border:3px solid transparent;
 	border-radius: 5px;
-	font-size: 3vw;
 	color:#fff;
+	font-size: 3vw;
 	margin:0 40%;
+	padding:1rem
 	position: absolute;
 	text-align: center;
-	background-color: rgba(27,27,12,0.6);
-	padding:1rem
 }
 
 .designP {
-	color:#fff;
+	background-color: #222;
 	border-top-width: 2px;
 	border-top-style: solid;
 	border-top-color: gold;
+	color:#fff;
 	height: 20vh;
 	min-height: 10rem;
-	background-color: #222;
 }
 
 .designP p {
@@ -406,32 +416,32 @@ footer {
 	border-top-width: 2px;
 	border-top-style: solid;
 	border-top-color: gold;
+	display:flex;
 	height: 60vh;
 	min-height: 30rem;
-	display:flex;
 	place-items:center;
 }
 
 .team2 h2 {
+	background-color: rgba(27,27,12,0.6);
 	border:3px solid transparent;
 	border-radius: 5px;
-	font-size: 3vw;
 	color:#fff;
+	font-size: 3vw;
 	margin:0 40%;
+	padding:1rem
 	position: absolute;
 	text-align: center;
-	background-color: rgba(27,27,12,0.6);
-	padding:1rem
 }
 
 .planP {
-	color:#fff;
+	background-color: #222;
 	border-top-width: 2px;
 	border-top-style: solid;
 	border-top-color: gold;
+	color:#fff;
 	height: 20vh;
 	min-height: 10rem;
-	background-color: #222;
 }
 
 .planP p {
@@ -448,32 +458,32 @@ footer {
 	border-top-width: 2px;
 	border-top-style: solid;
 	border-top-color: gold;
+	display:flex;
 	height: 60vh;
 	min-height: 30rem;
-	display:flex;
 	place-items:center;
 }
 
 .team3 h2 {
+	background-color: rgba(27,27,12,0.6);
 	border:3px solid transparent;
 	border-radius: 5px;
-	font-size: 3vw;
 	color:#fff;
+	font-size: 3vw;
 	margin:0 40%;
 	position: absolute;
-	text-align: center;
-	background-color: rgba(27,27,12,0.6);
 	padding:1rem
+	text-align: center;
 }
 
 .buildP {
-	color:#222;
+	background-color: #fff;
 	border-top-width: 2px;
 	border-top-style: solid;
 	border-top-color: gold;
+	color:#222;
 	height: 20vh;
 	min-height: 10rem;
-	background-color: #fff;
 }
 
 .buildP p {
@@ -481,15 +491,38 @@ footer {
 	text-align: center;
 }
 
-@media only screen and (max-width: 640px) {
-	nav ul {
-		display:none;
+@media only screen and (max-width: 780px) {
+	nav ul li {
+		font-size: small;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	nav .navlist {
+		display:block;
+		left:-300px;
+		position: absolute;
+		transform: translateX(-150vw);
+		transition-duration: 1s;
+		top:4rem;
+		width:40vw;
+	}
+	nav .navlist.appear {
+		transform: translateX(135vw);
+		transition-duration: 1s;		
+	}
+	nav ul li{
+		background-color: rgba(27,27,12,0.6);
+		min-height: 2rem;
+		right:0;
 	}
 	.nav2 {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-row-gap: 5px;
+		grid-row-gap: 2px;
+		height: 2.3rem;
 		justify-content: right;
+		margin-left:80vw;
 		position:fixed;
 		padding:1rem;
 		width: 10vw;
@@ -500,7 +533,224 @@ footer {
 	.nav2 .menu-bar {
 		background-color: gold;
 		border:1px solid gold;
+		height: 2px;
+		transition-duration: 200ms;
 		width: 2rem;
-		height: 1px;
+	}
+	.nav .menu-bar.x1 {
+		bottom:0;
+		left:15px;
+		position: absolute;
+	}
+	.nav2 .menu-bar.x2 {
+		background-color: red;
+		border:1px solid red;
+		left:16px;		
+		position: absolute;
+		transform:rotate(35deg);
+		transition-duration: 1s;
+		top:30px;
+	}
+	.nav2 .menu-bar.x3 {
+		background-color: red;
+		border:1px solid red;
+		left:16px;	
+		position: absolute;
+		transform:rotate(-35deg);
+		transition-duration: 1s;	
+		top:30px;
+	}
+	.company-name {
+		left: 5vw;
+		padding: 0;
+		text-align: center;
+		width:90vw;
+	}
+	.tag-line {
+		left:10vw;
+		text-align: center;
+	}
+	.services {
+		grid-template-columns: 1fr;
+		grid-row-gap: 10px;
+		height:200vh;
+	}
+	.service1,
+	.service2,
+	.service3 {
+		font-size: 5vw;
+	}
+	.AboutUs {
+		height: 80vh;
+		min-height: 20rem;
+	}
+	.mission {
+		bottom:40vh;
+		font-size: 4vw;
+		left:5vw;
+		width:90vw;
+	}
+	.vision {
+		bottom:10vh;
+		font-size: 4vw;
+		left:5vw;
+		width:90vw;
+	}
+	.item1,
+	.item2,
+	.item3 {
+		font-size: 5vw;
+	}
+	.cprev,
+	.cnext {
+		font-size: 15vw;
+	}
+	.ContactUs {
+		font-size: 5vw;
+	}
+	.inputMsg input {
+		width:18rem;
+	}
+
+	.inputName {
+		top:3vh;
+	}
+
+	.inputEmail {
+		top:11vh;
+	}
+
+	.inputPhone {
+		top:20vh;
+	}
+
+	.inputMsg {
+		top:28vh;
+	}
+	footer {
+		grid-template-columns: 1fr;
+		grid-row-gap: 5px;
+		height: 50vh;
+	}
+	.team1 {
+		background-image: url("../img/cad1.jpg");
+	}
+	.team1 h2 {
+		font-size: 5vw;
+		margin:0 15%;
+		padding:0 20vw;
+	}	
+	.designP p {
+		padding:2px;
+	}
+	.team2 h2 {
+		font-size: 5vw;
+		margin:0 15%;
+		padding:0 20vw;
+	}
+	.planP {
+		height: 50vh;
+	}
+	.planP p {
+		padding:10px;
+	}
+	.team3 h2 {
+		font-size: 5vw;
+		margin:0 15%;
+		padding:0 20vw;
+	}
+	.buildP {
+
+	}
+	.buildP p{		
+		padding:10px;
+	}
+}
+
+@media screen and (max-height: 360px) {
+	nav .navlist {
+		width:25vw;
+	}
+	nav .navlist.appear {
+		transform: translateX(120vw);
+	}
+	.nav2 {
+		margin-left: 90vw;
+	}
+	.company-name {
+		left: 5vw;
+		padding: 0;
+		text-align: center;
+		width:90vw;
+	}
+	.tag-line {
+		left:5vw;
+		text-align: center;
+		width:90vw;
+	}
+	.services {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 10px;
+		height:50vh;
+	}
+	.service1,
+	.service2,
+	.service3 {
+		font-size: 2vw;
+	}
+	.AboutUs {
+		height: 80vh;
+		min-height: 20rem;
+	}
+	.mission {
+		bottom:40vh;
+		font-size: 2.5vw;
+		left:5vw;
+		width:90vw;
+	}
+	.vision {
+		bottom:10vh;
+		font-size: 2.5vw;
+		left:5vw;
+		width:90vw;
+	}
+	.item1,
+	.item2,
+	.item3 {
+		font-size: 3vw;
+	}
+	.cprev,
+	.cnext {
+		font-size: 15vw;
+	}
+	.ContactUs {
+		font-size: 3vw;
+	}
+	.inputMsg input {
+		width:18rem;
+	}
+
+	.inputName {
+		top:3vh;
+	}
+
+	.inputEmail {
+		top:18vh;
+	}
+
+	.inputPhone {
+		top:33vh;
+	}
+
+	.inputMsg {
+		top:48vh;
+	}
+	footer {
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 5px;
+		height: 40vh;
+	}
+	.planP {
+		height: 80vh;
 	}
 }

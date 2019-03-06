@@ -23,3 +23,21 @@ function cprev() {
 		document.getElementById("item1").setAttribute('class',"item1");
 	}
 }
+
+function nav_menu() {
+	var x = document.getElementById("nav-menu");
+	var x1 = document.getElementById("x1");
+	var x2 = document.getElementById("x2");
+	var x3 = document.getElementById("x3");
+	if (x.className === "navlist") {
+		x.className += " appear";
+		x1.className += " x1";
+		x2.className += " x2";
+		x3.className += " x3";
+	} else {
+		x.className = "navlist";
+		x1.className = "menu-bar";
+		x2.className = "menu-bar";
+		x3.className = "menu-bar";
+	}
+}
